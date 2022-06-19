@@ -15,3 +15,20 @@ This can be usefull if you have a program running on a lot of servers or compute
 ## How can I implement this in my own project?
 
 Well, it is really simple, just change the target ```p = multiprocessing.Process(target=program.main, args=(current_version,))``` on line 56 with your existing program that you want to have automatically update and that's it.
+
+## How to run the demo?
+
+You can run the demo by following the commands noted down below:
+### Terminal 1 (backend API)
+```
+cd api
+python api.py
+```
+### Terminal 2 (program)
+```
+python main.py
+```
+
+## Known limitations:
+
+* You can't update the main.py file
