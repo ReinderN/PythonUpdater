@@ -25,7 +25,8 @@ def download_file(url: str):
 
 
 def update_program(url: str, current_version: int, p: multiprocessing.Process):
-    """This function checks if there is an update available, if there is, it downloads it and restarts the program.
+    """This function checks if there is an update available, 
+    if there is, it downloads it and restarts the program.
 
     Args:
         url (str): The url of the api.
@@ -61,6 +62,7 @@ def main(current_version: int):
 
 
 def schedule_check():
+    """This function runs the schedule."""
     while True:
         schedule.run_pending()
         time.sleep(1)
