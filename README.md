@@ -20,7 +20,7 @@ Well, it is really simple, just change the target
 p = multiprocessing.Process(target=program.main, args=(current_version,))
 ```
 
-on line 56 with your existing program that you want to have automatically update and that's it.
+(on line 56 in main.py) with your existing program that you want to have automatically update and that's it.
 
 ## How to run the demo?
 
